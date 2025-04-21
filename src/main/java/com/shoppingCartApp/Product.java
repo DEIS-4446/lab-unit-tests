@@ -1,19 +1,25 @@
 package com.shoppingCartApp;
 
 public class Product {
-        private final String name;
-        private final Double price;
+    private String name;
+    private double price;
+    private String category;
 
-        public Product(String name, Double price) {
-            this.name = name;
-            this.price = price;
-        }
+    public Product(String name, double price, String category) {
+        this.name = name;
+        this.price = price;
+        this.category = category;
+    }
 
-        public String getName() {
-            return name;
-        }
+    public String name() {
+        return name;
+    }
 
-        public Double getPrice() {
-            return price;
-        }
+    public double price() {
+        return price;
+    }
+
+    public String category() {
+        return category;
+    }
 }
